@@ -4,8 +4,15 @@
   "private": true,
   "description": "Проект «Большое путешествие» от HTML Academy",
   "scripts": {
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
   },
+  "browserslist": [
+  "> 0.5%",
+  "last 2 versions",
+  "not dead"
+  ],
   "devDependencies": {
     "eslint": "8.38.0",
     "eslint-config-htmlacademy": "9.0.0"
